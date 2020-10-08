@@ -12,11 +12,11 @@
     <tr>
       <td>So Thu Nhat</td>
       <td>
-        <input id="soThuNhat" type="text"></td>
+        <input id="soThuNhat" type="number"></td>
     </tr>
     <tr>
       <td>So Thu Hai</td>
-      <td><input id="soThuHai" type="text"></td>
+      <td><input id="soThuHai" type="number"></td>
     </tr>
     <tr>
       <td id="phatNgon" colspan="2"></td>
@@ -29,8 +29,8 @@
   </table>
   <script>
     function tich() {
-      let soThuNhat = document.getElementById("soThuNhat").value
-      let soThuHai = document.getElementById("soThuHai").value
+      let soThuNhat = Number(document.getElementById("soThuNhat").value)
+      let soThuHai = Number(document.getElementById("soThuHai").value)
       let tich = soThuNhat * soThuHai
       let phatNgon = "Tich hai so la " + tich
       document.getElementById("phatNgon").innerText = phatNgon
