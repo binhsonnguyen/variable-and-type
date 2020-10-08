@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo variable</title>
 </head>
+
 <body>
   <table>
     <tr>
       <td>So Thu Nhat</td>
-      <td><input type="text"></td>
+      <td>
+        <input id="soThuNhat" type="text"></td>
     </tr>
     <tr>
       <td>So Thu Hai</td>
-      <td><input type="text"></td>
+      <td><input id="soThuHai" type="text"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input onclick="tich()" type="button" value="Tính tích">
+      </td>
     </tr>
   </table>
   <script>
-    let soThuNhat = 3
-    let soThuHai = 4
-    let tich = soThuNhat * soThuHai
-    let phatNgon = "Tich hai so la " + tich
+    function tich() {
+      let soThuNhat = document.getElementById("soThuNhat").value
+      let soThuHai = document.getElementById("soThuHai").value
+      let tich = soThuNhat * soThuHai
+      let phatNgon = "Tich hai so la " + tich
+      alert(phatNgon)
+    }
   </script>
 </body>
+
 </html>
