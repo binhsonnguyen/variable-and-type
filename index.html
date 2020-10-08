@@ -19,6 +19,9 @@
       <td><input id="soThuHai" type="text"></td>
     </tr>
     <tr>
+      <td id="phatNgon" colspan="2"></td>
+    </tr>
+    <tr>
       <td colspan="2">
         <input onclick="tich()" type="button" value="Tính tích">
       </td>
@@ -30,7 +33,7 @@
       let soThuHai = document.getElementById("soThuHai").value
       let tich = soThuNhat * soThuHai
       let phatNgon = "Tich hai so la " + tich
-      alert(phatNgon)
+      document.getElementById("phatNgon").innerText = phatNgon
     }
   </script>
 </body>
